@@ -4,7 +4,7 @@ import cv2
 app = Flask(__name__)
 
 def generate_frames():
-    camera = cv2.VideoCapture(1)  # Open the webcam (camera index 0)
+    camera = cv2.VideoCapture(0)  # Open the webcam (camera index 0)
     
     while True:
         success, frame = camera.read()
