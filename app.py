@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Render a template with a button to request camera permission
-    return render_template('templates/ind.html')
+    return render_template('ind.html')
 
 def generate_frames():
     camera = cv2.VideoCapture(0)  # Open the webcam (camera index 0)
