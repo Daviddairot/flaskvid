@@ -3,6 +3,7 @@ import cv2
 
 app = Flask(__name__)
 
+@app.route('/')
 def index():
     # Render a template with a button to request camera permission
     return render_template('templates/ind.html')
