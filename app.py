@@ -1,4 +1,4 @@
-from flask import Flask, Response
+from flask import Flask, Response, render_template
 import cv2
 
 app = Flask(__name__)
